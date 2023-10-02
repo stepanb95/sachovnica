@@ -1,0 +1,28 @@
+.button{
+    display: flex;
+    justify-content:center;
+    margin-top: 100px;
+}
+
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(var(--sloupce, 8), 1fr);
+    grid-template-rows: repeat(var(--radky, 8), 1fr);
+    width: 200px; 
+    height: 200px; 
+    margin-left: 540px;
+    margin-top: 50px;
+}
+
+.cell {
+    width: 100%;
+    height: 100%;
+}
+
+.cell.white {
+    background-color: white;
+}
+
+.cell.black {
+    background-color: black;
+}
